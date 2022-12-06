@@ -1,0 +1,16 @@
+[package]
+name = "image_mozjpeg_comp"
+version = "0.1.0"
+edition = "2021"
+authors = ["Enguerrand DE SMET"]
+
+[dependencies]
+clap = {version = "4.*", features = ["derive"]}
+image = "0.24.5"
+imageproc = "0.23.0"
+mozjpeg = "0.9.4"
+
+[profile.release]
+# symbols are nice and they don't increase the size on Flash
+debug = true
+opt-level = 3
