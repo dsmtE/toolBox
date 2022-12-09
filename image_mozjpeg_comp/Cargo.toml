@@ -6,6 +6,7 @@ authors = ["Enguerrand DE SMET"]
 
 [dependencies]
 clap = {version = "4.*", features = ["derive"]}
+glob = "0.3.0"
 image = "0.24.5"
 imageproc = "0.23.0"
 mozjpeg = "0.9.4"
